@@ -163,7 +163,89 @@
                     <label class="label-uppercase" style="display: block; margin-bottom: var(--spacing-xs);">Why do you want to join?</label>
                     <textarea id="interest" name="interest" class="text-input" rows="4" style="height: auto; resize: vertical;" placeholder="Briefly detail your interest in the Motorcycle Enforcement Unit..." required></textarea>
                 </div>
-                <button type="submit" id="submitBtn" class="button-primary" style="margin-top: var(--spacing-md); width: 100%;">Submit Interest</button>
+
+                <div style="margin-top: var(--spacing-lg);">
+                    <div class="m-stripe-divider" style="max-width: 100px; margin-bottom: var(--spacing-md);">
+                        <div class="m-stripe-segment stripe-light"></div>
+                        <div class="m-stripe-segment stripe-dark"></div>
+                        <div class="m-stripe-segment stripe-red"></div>
+                    </div>
+                    <h3 class="title-lg" style="margin-bottom: var(--spacing-md);">Knowledge Assessment</h3>
+                    
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <label class="body-md" style="display: block; margin-bottom: var(--spacing-xs); font-weight: bold;">1. You are part of a 2-unit MEU team pursuing a suspect through heavy traffic in downtown Los Santos. The suspect enters a narrow alley with pedestrians present. What is the BEST course of action?</label>
+                        <select name="mcq1" class="text-input" required>
+                            <option value="" disabled selected>Select an option...</option>
+                            <option value="A">A. Follow aggressively to maintain pressure</option>
+                            <option value="B">B. Split up and block both exits at high speed</option>
+                            <option value="C">C. Slow down, maintain visual if safe, and coordinate containment with backup units</option>
+                            <option value="D">D. Enter the alley at full speed to prevent escape</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <label class="body-md" style="display: block; margin-bottom: var(--spacing-xs); font-weight: bold;">2. During a pursuit, your partner crashes due to loss of control while cornering. The suspect continues fleeing. What should you do?</label>
+                        <select name="mcq2" class="text-input" required>
+                            <option value="" disabled selected>Select an option...</option>
+                            <option value="A">A. Continue pursuit alone to not lose the suspect</option>
+                            <option value="B">B. Stop immediately to assist your partner and notify dispatch</option>
+                            <option value="C">C. Ignore partner and call EMS later</option>
+                            <option value="D">D. Attempt to chase and call for help at the same time</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <label class="body-md" style="display: block; margin-bottom: var(--spacing-xs); font-weight: bold;">3. You are assigned traffic duty when a high-risk armed robbery suspect is spotted fleeing nearby. You are the closest MEU unit. What is your role?</label>
+                        <select name="mcq3" class="text-input" required>
+                            <option value="" disabled selected>Select an option...</option>
+                            <option value="A">A. Engage directly and attempt to stop the suspect alone</option>
+                            <option value="B">B. Join pursuit but maintain support role and relay real-time updates</option>
+                            <option value="C">C. Ignore because it’s not traffic-related</option>
+                            <option value="D">D. Attempt PIT maneuver immediately</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <label class="body-md" style="display: block; margin-bottom: var(--spacing-xs); font-weight: bold;">4. While riding at moderate speed, a civilian vehicle suddenly swerves into your lane. What is the MOST appropriate immediate response?</label>
+                        <select name="mcq4" class="text-input" required>
+                            <option value="" disabled selected>Select an option...</option>
+                            <option value="A">A. Accelerate past the vehicle</option>
+                            <option value="B">B. Brake and evade while maintaining control</option>
+                            <option value="C">C. Honk and maintain speed</option>
+                            <option value="D">D. Attempt to overtake from the same lane</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <label class="body-md" style="display: block; margin-bottom: var(--spacing-xs); font-weight: bold;">5. You are in a pursuit on a highway. Speeds exceed safe limits and traffic density increases significantly. Supervisor has not yet called it off. What should you do?</label>
+                        <select name="mcq5" class="text-input" required>
+                            <option value="" disabled selected>Select an option...</option>
+                            <option value="A">A. Continue pursuit at maximum speed</option>
+                            <option value="B">B. Back off to a safer distance and advise supervisor of risk</option>
+                            <option value="C">C. Attempt risky maneuver to end pursuit quickly</option>
+                            <option value="D">D. Ignore traffic conditions</option>
+                        </select>
+                    </div>
+
+                    <h3 class="title-lg" style="margin-top: var(--spacing-lg); margin-bottom: var(--spacing-md);">Theory Assessment</h3>
+
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <label class="body-md" style="display: block; margin-bottom: var(--spacing-xs); font-weight: bold;">1. Explain the role of the Motorcycle Enforcement Unit in the Police Department.</label>
+                        <textarea name="theory1" class="text-input" rows="3" style="height: auto; resize: vertical;" placeholder="Your answer..." required></textarea>
+                    </div>
+
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <label class="body-md" style="display: block; margin-bottom: var(--spacing-xs); font-weight: bold;">2. What are the key risks of operating a police motorcycle, and how can they be minimized?</label>
+                        <textarea name="theory2" class="text-input" rows="3" style="height: auto; resize: vertical;" placeholder="Your answer..." required></textarea>
+                    </div>
+
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <label class="body-md" style="display: block; margin-bottom: var(--spacing-xs); font-weight: bold;">3. Describe the correct approach to handling a pursuit where the suspect enters an area with high pedestrian density (e.g., beach, public event).</label>
+                        <textarea name="theory3" class="text-input" rows="3" style="height: auto; resize: vertical;" placeholder="Your answer..." required></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" id="submitBtn" class="button-primary" style="margin-top: var(--spacing-md); width: 100%;">Submit Interest & Assessment</button>
                 <p id="formMessage" class="body-md" style="display: none; margin-top: var(--spacing-sm); text-align: center;"></p>
             </form>
         </div>
