@@ -341,14 +341,14 @@ a {
   height: 150px;
   filter: invert(1);
   mix-blend-mode: screen;
-  transform: translateX(-150vw);
+  transform: translateX(150vw) scaleX(-1);
   animation: preloaderDrive 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 @keyframes preloaderDrive {
-  0% { transform: translateX(-150vw) rotate(-5deg); }
-  50% { transform: translateX(0) rotate(0deg); }
-  100% { transform: translateX(150vw) rotate(5deg); }
+  0% { transform: translateX(150vw) scaleX(-1) rotate(5deg); }
+  50% { transform: translateX(0) scaleX(-1) rotate(0deg); }
+  100% { transform: translateX(-150vw) scaleX(-1) rotate(-5deg); }
 }
 
 @keyframes preloaderFadeOut {
@@ -371,7 +371,7 @@ a {
 .footer-bike {
   height: 40px;
   position: absolute;
-  left: -100px;
+  right: -100px;
   filter: invert(1);
   mix-blend-mode: screen;
   opacity: 0.5;
@@ -379,9 +379,9 @@ a {
 }
 
 @keyframes footerDriveLoop {
-  0% { transform: translateX(0); }
-  15% { transform: translateX(110vw); }
-  100% { transform: translateX(110vw); }
+  0% { transform: translateX(0) scaleX(-1); }
+  15% { transform: translateX(-110vw) scaleX(-1); }
+  100% { transform: translateX(-110vw) scaleX(-1); }
 }
 
 .model-card img {

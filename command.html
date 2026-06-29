@@ -4,7 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SASP MEU | Command Sector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .roster-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: var(--spacing-lg);
+        }
+        .roster-grid > .feature-photo-card {
+            width: 340px;
+            max-width: 100%;
+            flex: 0 0 auto;
+        }
+    </style>
 </head>
 <body>
     <div class="preloader-overlay">
@@ -56,50 +70,70 @@
             <h2 class="display-lg">MEU Roster & Ranks.</h2>
         </div>
         
-        <div class="grid-3up">
-            <div class="feature-photo-card" style="border-top: 3px solid var(--m-red);">
-                <div class="label-uppercase" style="color: var(--m-red);">Command</div>
-                <h3 class="title-lg">M.E.U Lead</h3>
-                <p class="body-md" style="margin-top: var(--spacing-sm);">The M.E.U Lead oversees the entire unit, handles high-level administrative duties, and coordinates directly with SASP High Command regarding the deployment and strategy of the unit.</p>
-                
-                <div style="margin-top: var(--spacing-md); padding-top: var(--spacing-sm); border-top: 1px solid var(--hairline);">
-                    <div class="label-uppercase" style="color: var(--muted); margin-bottom: var(--spacing-xs); font-size: 11px;">Active Personnel</div>
-                    <ul class="feature-list body-md">
-                        <li>Sartaj Singh</li>
-                    </ul>
+        <div style="margin-bottom: var(--spacing-xl);">
+            <h3 class="title-lg" style="margin-bottom: var(--spacing-md); color: var(--m-red); border-bottom: 1px solid var(--hairline); padding-bottom: 8px;">Commanding Officer</h3>
+            <div class="roster-grid">
+                <div class="feature-photo-card" style="border-top: 3px solid var(--m-red);">
+                    <img src="assets/sartaj.jpg" alt="Sartaj Singh" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: top; margin-bottom: var(--spacing-md); border-radius: 2px;">
+                    <h3 class="title-lg">Sartaj Singh</h3>
+                    <div class="label-uppercase" style="color: var(--m-red); margin-top: 4px;">M.E.U Lead</div>
                 </div>
             </div>
-            
-            <div class="feature-photo-card" style="border-top: 3px solid var(--m-blue-light);">
-                <div class="label-uppercase" style="color: var(--m-blue-light);">Supervision</div>
-                <h3 class="title-lg">M.E.U Supervisor</h3>
-                <p class="body-md" style="margin-top: var(--spacing-sm);">Supervisors manage active deployments, ensure compliance with the SOP during operations, and provide guidance to Instructors and regular officers on duty.</p>
+        </div>
 
-                <div style="margin-top: var(--spacing-md); padding-top: var(--spacing-sm); border-top: 1px solid var(--hairline);">
-                    <div class="label-uppercase" style="color: var(--muted); margin-bottom: var(--spacing-xs); font-size: 11px;">Active Personnel</div>
-                    <ul class="feature-list body-md">
-                        <li>Daya Day</li>
-                        <li>JAYKANT SHIKRE</li>
-                    </ul>
+        <div style="margin-bottom: var(--spacing-xl);">
+            <h3 class="title-lg" style="margin-bottom: var(--spacing-md); color: var(--m-blue-light); border-bottom: 1px solid var(--hairline); padding-bottom: 8px;">Supervision</h3>
+            <div class="roster-grid">
+                <div class="feature-photo-card" style="border-top: 3px solid var(--m-blue-light);">
+                    <img src="assets/daya.png" alt="Daya Day" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: top; margin-bottom: var(--spacing-md); border-radius: 2px;">
+                    <h3 class="title-lg">Daya Day</h3>
+                    <div class="label-uppercase" style="color: var(--m-blue-light); margin-top: 4px;">M.E.U Supervisor</div>
+                </div>
+                <div class="feature-photo-card" style="border-top: 3px solid var(--m-blue-light);">
+                    <img src="assets/jaykant.jpg" alt="Jaykant Shikre" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: top; margin-bottom: var(--spacing-md); border-radius: 2px;">
+                    <h3 class="title-lg">JAYKANT SHIKRE</h3>
+                    <div class="label-uppercase" style="color: var(--m-blue-light); margin-top: 4px;">M.E.U Supervisor</div>
                 </div>
             </div>
-            
-            <div class="feature-photo-card" style="border-top: 3px solid var(--m-blue-dark);">
-                <div class="label-uppercase" style="color: var(--m-blue-dark);">Training</div>
-                <h3 class="title-lg">M.E.U Instructor</h3>
-                <p class="body-md" style="margin-top: var(--spacing-sm);">Instructors are responsible for training new applicants, conducting regular recertification exams, and issuing strikes for SOP violations.</p>
+        </div>
 
-                <div style="margin-top: var(--spacing-md); padding-top: var(--spacing-sm); border-top: 1px solid var(--hairline);">
-                    <div class="label-uppercase" style="color: var(--muted); margin-bottom: var(--spacing-xs); font-size: 11px;">Active Personnel</div>
-                    <ul class="feature-list body-md">
-                        <li>Ray Gibson</li>
-                        <li>Kash Rodriguez</li>
-                        <li>Iris Bloom</li>
-                        <li>Jatayu Dharma</li>
-                        <li>Vin Jordan</li>
-                        <li>Vi Jones</li>
-                        <li>Adi Soni</li>
-                    </ul>
+        <div style="margin-bottom: var(--spacing-xl);">
+            <h3 class="title-lg" style="margin-bottom: var(--spacing-md); color: var(--m-blue-dark); border-bottom: 1px solid var(--hairline); padding-bottom: 8px;">Instructors</h3>
+            <div class="roster-grid">
+                <div class="feature-photo-card" style="border-top: 3px solid var(--m-blue-dark);">
+                    <img src="assets/image3.jpg" alt="Iris Bloom" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: top; margin-bottom: var(--spacing-md); border-radius: 2px;">
+                    <h3 class="title-lg">Iris Bloom</h3>
+                    <div class="label-uppercase" style="color: var(--m-blue-dark); margin-top: 4px;">M.E.U Instructor</div>
+                </div>
+                <div class="feature-photo-card" style="border-top: 3px solid var(--m-blue-dark);">
+                    <img src="assets/image4.jpg" alt="Ray Gibson" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: top; margin-bottom: var(--spacing-md); border-radius: 2px;">
+                    <h3 class="title-lg">Ray Gibson</h3>
+                    <div class="label-uppercase" style="color: var(--m-blue-dark); margin-top: 4px;">M.E.U Instructor</div>
+                </div>
+                <div class="feature-photo-card" style="border-top: 3px solid var(--m-blue-dark);">
+                    <img src="assets/kash.jpg" alt="Kash Rodriguez" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: top; margin-bottom: var(--spacing-md); border-radius: 2px;">
+                    <h3 class="title-lg">Kash Rodriguez</h3>
+                    <div class="label-uppercase" style="color: var(--m-blue-dark); margin-top: 4px;">M.E.U Instructor</div>
+                </div>
+                <div class="feature-photo-card" style="border-top: 3px solid var(--m-blue-dark);">
+                    <img src="assets/jatayu.png" alt="Jatayu Dharma" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: top; margin-bottom: var(--spacing-md); border-radius: 2px;">
+                    <h3 class="title-lg">Jatayu Dharma</h3>
+                    <div class="label-uppercase" style="color: var(--m-blue-dark); margin-top: 4px;">M.E.U Instructor</div>
+                </div>
+                <div class="feature-photo-card" style="border-top: 3px solid var(--m-blue-dark);">
+                    <img src="assets/vin.png" alt="Vin Jordan" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: top; margin-bottom: var(--spacing-md); border-radius: 2px;">
+                    <h3 class="title-lg">Vin Jordan</h3>
+                    <div class="label-uppercase" style="color: var(--m-blue-dark); margin-top: 4px;">M.E.U Instructor</div>
+                </div>
+                <div class="feature-photo-card" style="border-top: 3px solid var(--m-blue-dark);">
+                    <img src="assets/vi.png" alt="Vi Jones" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: top; margin-bottom: var(--spacing-md); border-radius: 2px;">
+                    <h3 class="title-lg">Vi Jones</h3>
+                    <div class="label-uppercase" style="color: var(--m-blue-dark); margin-top: 4px;">M.E.U Instructor</div>
+                </div>
+                <div class="feature-photo-card" style="border-top: 3px solid var(--m-blue-dark);">
+                    <img src="assets/adi.jpg" alt="Adi Soni" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: top; margin-bottom: var(--spacing-md); border-radius: 2px;">
+                    <h3 class="title-lg">Adi Soni</h3>
+                    <div class="label-uppercase" style="color: var(--m-blue-dark); margin-top: 4px;">M.E.U Instructor</div>
                 </div>
             </div>
         </div>
