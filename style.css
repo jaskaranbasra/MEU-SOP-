@@ -512,7 +512,21 @@ a {
   .footer {
     grid-template-columns: 1fr;
   }
+  .top-nav {
+    flex-direction: column;
+    height: auto;
+    padding: var(--spacing-sm);
+  }
+  .nav-brand {
+    margin-right: 0;
+    margin-bottom: var(--spacing-sm);
+  }
   .nav-links {
-    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-md);
+  }
+  .nav-link {
+    font-size: 12px;
   }
 }
