@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASP MEU | Statement of Interest Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="preloader-overlay">
+        <img src="assets/bmw_gs_silhouette.png" class="preloader-bike" alt="MEU Bike">
+    </div>
+
+    <nav class="top-nav">
+        <div class="nav-brand">
+            <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 8px;">
+                <img src="assets/logo.png" alt="MEU Logo" class="meu-logo-img" onerror="this.style.display='none'">
+                <span class="meu-logo" style="margin: 0;">SASP MEU</span>
+            </a>
+            <div class="divider-container" style="margin-left: 24px;">
+                <div class="m-stripe-divider">
+                    <div class="m-stripe-segment stripe-light"></div>
+                    <div class="m-stripe-segment stripe-dark"></div>
+                    <div class="m-stripe-segment stripe-red"></div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <div class="nav-dropdown">
+                <a href="sop.html" class="nav-link">Full SOP ▾</a>
+                <div class="dropdown-content">
+                    <a href="sop.html#pursuits" class="nav-link-dropdown">Pursuits</a>
+                    <a href="sop.html#accountability" class="nav-link-dropdown">Accountability</a>
+                </div>
+            </div>
+            <a href="command.html" class="nav-link">Command Sector</a>
+            <a href="soi.html" class="nav-link">SOI Form</a>
+        </div>
+    </nav>
+
+    <div class="hero-photo-band" style="background-image: url('assets/meu_hero_bike_1777441235465.png'); min-height: 40vh;">
+        <div class="hero-content">
+            <h1 class="display-xl" style="font-size: 56px;">Statement of Interest.</h1>
+            <p class="body-md">Submit your SOI to officially begin the MEU authorization and training process.</p>
+        </div>
+    </div>
+
+    <section id="soi" class="section-container" style="padding-top: var(--spacing-xl);">
+        <div class="feature-photo-card" style="max-width: 800px; padding: var(--spacing-xl); margin: 0 auto;">
+            <form id="soiForm" action="#" method="POST" style="display: flex; flex-direction: column; gap: var(--spacing-md);">
+                <div>
+                    <label class="label-uppercase" style="display: block; margin-bottom: var(--spacing-xs);">Officer Name</label>
+                    <input type="text" id="officerName" name="name" class="text-input" placeholder="Enter your full name" required>
+                </div>
+                <div>
+                    <label class="label-uppercase" style="display: block; margin-bottom: var(--spacing-xs);">Callsign</label>
+                    <input type="text" id="callsign" name="callsign" class="text-input" placeholder="e.g. 1-ADAM-12" required>
+                </div>
+                <div>
+                    <label class="label-uppercase" style="display: block; margin-bottom: var(--spacing-xs);">Why do you want to join?</label>
+                    <textarea id="interest" name="interest" class="text-input" rows="4" style="height: auto; resize: vertical;" placeholder="Briefly detail your interest in the Motorcycle Enforcement Unit..." required></textarea>
+                </div>
+
+                <div style="margin-top: var(--spacing-lg);">
+                    <div class="m-stripe-divider" style="max-width: 100px; margin-bottom: var(--spacing-md);">
+                        <div class="m-stripe-segment stripe-light"></div>
+                        <div class="m-stripe-segment stripe-dark"></div>
+                        <div class="m-stripe-segment stripe-red"></div>
+                    </div>
+                    
+                    <div style="background-color: var(--surface-soft); padding: var(--spacing-md); margin-bottom: var(--spacing-lg); border-left: 3px solid var(--m-blue-light);">
+                        <h4 class="label-uppercase" style="color: var(--on-dark); margin-bottom: var(--spacing-xs);">Grading Rubric</h4>
+                        <p class="body-sm" style="color: var(--body);">MCQ: 3 points each (9 total)<br>Theory: 10 points each (30 total)<br>Passing score: 30/39<br><strong style="color: var(--m-red);">Automatic fail:</strong> Poor judgment regarding officer/public safety.</p>
+                    </div>
+
+                    <h3 class="title-lg" style="margin-bottom: var(--spacing-md);">Knowledge Assessment</h3>
+                    
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <label class="body-md" style="display: block; margin-bottom: var(--spacing-xs); font-weight: bold;">1. You are conducting motorcycle patrol when you observe a vehicle driving recklessly through heavy traffic. You have no backup nearby. What is the most appropriate action?</label>
+                        <select name="mcq1" class="text-input" required>
+                            <option value="" disabled selected>Select an option...</option>
+                            <option value="A">A. Immediately initiate a high-speed pursuit to stop the vehicle</option>
+                            <option value="B">B. Follow at a safe distance, update dispatch, and request additional units</option>
+                            <option value="C">C. Attempt to block the vehicle alone with your motorcycle</option>
+                            <option value="D">D. Ignore the vehicle because MEU only handles motorcycles</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <label class="body-md" style="display: block; margin-bottom: var(--spacing-xs); font-weight: bold;">2. During a pursuit, your motorcycle begins experiencing handling issues due to damage. What should you do?</label>
+                        <select name="mcq2" class="text-input" required>
+                            <option value="" disabled selected>Select an option...</option>
+                            <option value="A">A. Continue pursuing until the suspect is caught</option>
+                            <option value="B">B. Increase speed to compensate for the issue</option>
+                            <option value="C">C. Inform dispatch, disengage if unsafe, and allow other units to continue</option>
+                            <option value="D">D. Stop the pursuit without notifying anyone</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <label class="body-md" style="display: block; margin-bottom: var(--spacing-xs); font-weight: bold;">3. An MEU officer's primary advantage over standard patrol units is:</label>
+                        <select name="mcq3" class="text-input" required>
+                            <option value="" disabled selected>Select an option...</option>
+                            <option value="A">A. Ability to ignore traffic laws during patrol</option>
+                            <option value="B">B. Ability to perform dangerous maneuvers without restrictions</option>
+                            <option value="C">C. Increased mobility and maneuverability in difficult environments</option>
+                            <option value="D">D. Ability to handle every situation without backup</option>
+                        </select>
+                    </div>
+
+                    <h3 class="title-lg" style="margin-top: var(--spacing-lg); margin-bottom: var(--spacing-md);">Theory Assessment</h3>
+
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <label class="body-md" style="display: block; margin-bottom: var(--spacing-xs); font-weight: bold;">1. Explain the responsibilities of a Motorcycle Enforcement Unit officer and how their role differs from a normal patrol officer.</label>
+                        <textarea name="theory1" class="text-input" rows="3" style="height: auto; resize: vertical;" placeholder="Your answer..." required></textarea>
+                    </div>
+
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <label class="body-md" style="display: block; margin-bottom: var(--spacing-xs); font-weight: bold;">2. You are involved in a pursuit where the suspect enters a crowded public area. Explain your decision-making process and how you would handle the situation.</label>
+                        <textarea name="theory2" class="text-input" rows="3" style="height: auto; resize: vertical;" placeholder="Your answer..." required></textarea>
+                    </div>
+
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <label class="body-md" style="display: block; margin-bottom: var(--spacing-xs); font-weight: bold;">3. A trainee MEU officer keeps showing aggressive riding behavior and ignores safety procedures. As a senior officer, how would you handle the situation?</label>
+                        <textarea name="theory3" class="text-input" rows="3" style="height: auto; resize: vertical;" placeholder="Your answer..." required></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" id="submitBtn" class="button-primary" style="margin-top: var(--spacing-md); width: 100%;">Submit Interest & Assessment</button>
+                <p id="formMessage" class="body-md" style="display: none; margin-top: var(--spacing-sm); text-align: center;"></p>
+            </form>
+        </div>
+    </section>
+
+    <div class="footer-animation-container">
+        <img src="assets/bmw_gs_silhouette.png" class="footer-bike" alt="MEU Patrol Loop">
+    </div>
+    <footer class="footer">
+        <div class="footer-col">
+            <h4 class="label-uppercase">Standard Operating Procedure</h4>
+            <a href="index.html" class="footer-link body-sm">Motorcycle Enforcement Unit SOP</a>
+            <p class="body-sm" style="color: var(--muted); margin-top: var(--spacing-sm);">San Andreas State Police</p>
+            <div class="m-stripe-divider" style="margin-top: var(--spacing-lg);">
+                <div class="m-stripe-segment stripe-light"></div>
+                <div class="m-stripe-segment stripe-dark"></div>
+                <div class="m-stripe-segment stripe-red"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('soiForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const btn = document.getElementById('submitBtn');
+            const msg = document.getElementById('formMessage');
+            btn.textContent = 'Transmitting...';
+            btn.disabled = true;
+            
+            const formData = new FormData(this);
+            const data = new URLSearchParams(formData);
+            
+            // The active Google Apps Script webhook URL
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbw03T1ecBTQL6pjJAkefaUVgHMtBm53kkaaSEDaXXv6P0BlITUKvzTPXQiPeKNUS4Qn/exec';
+
+            fetch(scriptURL, { 
+                method: 'POST', 
+                body: data,
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                }
+            })
+                .then(response => {
+                    msg.style.display = 'block';
+                    msg.style.color = '#0fa336'; // Success green
+                    msg.textContent = 'Statement of Interest submitted successfully.';
+                    this.reset();
+                    btn.textContent = 'Submit Interest & Assessment';
+                    btn.disabled = false;
+                })
+                .catch(error => {
+                    msg.style.display = 'block';
+                    msg.style.color = 'var(--m-red)';
+                    msg.textContent = 'Transmission failed. Please try again.';
+                    btn.textContent = 'Submit Interest & Assessment';
+                    btn.disabled = false;
+                    console.error('Error!', error.message);
+                });
+        });
+    </script>
+</body>
+</html>
